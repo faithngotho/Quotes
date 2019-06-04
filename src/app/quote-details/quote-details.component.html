@@ -1,3 +1,5 @@
-<p>{{quote.description}}</p>
-<p>This quote will be completed in {{quote.completeDate|dateCount}} days</p>
-<button (click) = 'quoteDelete(true)'> Delete Quote </button>
+<p>Submitted By: {{quote.name}}</p><br>
+<p>Live for: {{quote.postDate|dateCount}} days</p><br>
+<button class="btn btn-success btn-lg" (click) = 'like()' style="margin-left:20px"> Love: {{quote.upvote}} </button>
+<button class="btn btn-danger btn-lg" (click) = 'dislike()' style="margin-left:20px"> Hate {{quote.downvote}}</button>
+<button class="btn btn-danger btn-lg" (click) = 'quoteDelete(true)' style="margin-left:20px"> Delete Quote </button>
