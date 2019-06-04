@@ -23,7 +23,7 @@ export class QuoteDetailsComponent implements OnInit {
   }
 
   dislike(){
-    
+    this.quote.downvote ++;
   }
   constructor() { }
 
