@@ -32,7 +32,4 @@ addNewQuote(quote){
 }
 
   
-   constructor(){}
-    ngOnInit(){
-    }
-    }
+  
